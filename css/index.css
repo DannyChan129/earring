@@ -1,0 +1,152 @@
+
+*{margin:0;padding:0;}
+html,body{
+    width:100%;
+    height:100%;
+    -moz-user-select:none; /* Firefox */
+     -ms-user-select:none; /* Internet Explorer */
+   -ktml-user-select:none; /* KHTML浏览器（比如：Konqueror） */
+ -webkit-user-select:none; /* Chrome,Safari,and Opera */
+   -webkit-touch-callout:none; /* Disable Android and IOS callout */
+    display:-webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    background:black;
+}
+
+/* loading */
+#loading {
+  display:block;
+  background:rgba(0,0,0,1);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:999999;
+  display:-webkit-flex;
+  -webkit-justify-content:center;
+  -webkit-align-items:center;
+}
+.spinner {
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 3px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  overflow: hidden;
+}
+.rule{
+  position: absolute;
+  width: 5.94rem;
+  height: 5.49rem;
+  z-index: 110;
+  display: none;
+}
+
+.mack{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: none;
+}
+.mack1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:100;
+  background:rgba(0,0,0,.8)
+}
+.box img{
+  position: absolute;
+  width:2.67rem;
+  height:2.67rem;
+  z-index:10;
+}
+
+/*竖屏显示提示*/
+.horizontal-screen-prompt{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: url(https://s0.babyfs.cn/op/arch/1/1a11e45e0cb9410482cd6d7c76dbe693/paopao/hengping.png) center center no-repeat;
+  background-size:cover;  
+  display:none;
+}
+
+/*图片破裂*/
+.hide{
+  -webkit-animation:flipInX .1s ease both;
+}
+@-webkit-keyframes flipInX{
+  0%{-webkit-transform:scale(1);opacity:1}
+  100%{-webkit-transform:scale(1.2);opacity:0}
+}
+
+/*ipad air2*/
+@media only screen and (min-width:1024px){
+
+}

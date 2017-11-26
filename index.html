@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://s0.babyfs.cn/op/arch/1/7f0df77ff5454d59a99aa289ec54d900/starts.css" />
+    <script src="https://s0.babyfs.cn/op/arch/52/9c13564e387b49b1ac62fa21207000cb/wx.js"></script>
+    <script>
+        function Rem() {
+            var docEl = document.documentElement,
+                oSize = docEl.clientWidth / 13.34;
+            if (oSize > 100) {
+                oSize = 100;
+            }
+            docEl.style.fontSize = oSize + 'px';
+        }
+        window.addEventListener('resize', Rem, false);
+        Rem();
+    </script>
+</head>
+
+<body>
+    <!-- loading -->
+    <div id="loading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <div class='horizontal-screen-prompt' style="position:absolute;z-index:1000;" />
+    </div>
+    <div id="home-page"></div>
+    <img class='rule' src=''>
+    <div class="mack"></div>
+    <div class="mack1"></div>
+    <audio id="audio" autoplay></audio>
+    <audio id="bgAudio" src="" autoplay loop></audio>
+    <div id="box" class="box">
+
+    </div>
+    <div class="modalBox f-modal-box">
+    </div>
+    <script src="https://s0.babyfs.cn/m/template/common/require.min.js" data-main='main'></script>
+</body>
+
+</html>
